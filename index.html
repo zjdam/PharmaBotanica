@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Apothecary - Natural Remedies from Your Kitchen</title>
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2C3333;
+            background-color: #F5F1E8;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #7C9885;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #F5F1E8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #7C9885 0%, #3D5A40 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .benefit {
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #D4816B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Categories Section */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #3D5A40;
+            margin-bottom: 3rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card h3 {
+            color: #3D5A40;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-count {
+            color: #7C9885;
+            font-weight: bold;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            background-color: white;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: #7C9885;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            color: #3D5A40;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3D5A40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌿 Home Apothecary</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Natural Remedies from Your Kitchen</h1>
+        <p>Traditional herbal wisdom meets modern wellness. Learn to make healing remedies at home with simple ingredients.</p>
+        
+        <div class="hero-benefits">
+            <div class="benefit">🌿 Video tutorials for every recipe</div>
+            <div class="benefit">🌿 Expert-verified formulations</div>
+            <div class="benefit">🌿 Easy-to-find ingredients</div>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <a href="categories.html" class="btn">Browse Remedies →</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <div class="container">
+        <h2 class="section-title">Explore by Body System</h2>
+        
+        <div class="categories-grid">
+            <div class="category-card" onclick="window.location.href='cardiovascular.html'">
+                <div class="category-icon">❤️</div>
+                <h3>Cardiovascular System</h3>
+                <p>Support heart health, blood pressure, and circulation</p>
+                <span class="recipe-count">15 Recipes</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🫁</div>
+                <h3>Respiratory System</h3>
+                <p>Natural relief for breathing and lung health</p>
+                <span class="recipe-count">Coming Soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🛡️</div>
+                <h3>Immune System</h3>
+                <p>Boost your body's natural defenses</p>
+                <span class="recipe-count">Coming Soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🌱</div>
+                <h3>Digestive System</h3>
+                <p>Gentle remedies for gut health</p>
+                <span class="recipe-count">Coming Soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧠</div>
+                <h3>Nervous System</h3>
+                <p>Calm, focus, and mental clarity</p>
+                <span class="recipe-count">Coming Soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">💪</div>
+                <h3>Musculoskeletal</h3>
+                <p>Support joints, muscles, and bones</p>
+                <span class="recipe-count">Coming Soon</span>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Categories</h3>
+                    <p>Choose the health area you want to support</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Pick a Recipe</h3>
+                    <p>Find a remedy that matches your needs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Watch & Learn</h3>
+                    <p>Follow step-by-step video instructions</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Make at Home</h3>
+                    <p>Create your remedy with simple ingredients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="container" style="text-align: center; padding: 3rem 2rem; background: white; border-radius: 10px; margin-bottom: 2rem;">
+        <h2 style="color: #3D5A40; margin-bottom: 1rem;">Ready to Start Your Wellness Journey?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #666;">Explore our growing collection of traditional remedies</p>
+        <a href="cardiovascular.html" class="btn">View All Remedies →</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Home Apothecary. All rights reserved.</p>
+        <p><strong>Disclaimer:</strong> These are traditional remedies and educational resources. They are not medical advice. Always consult with a healthcare professional before starting any new health regimen.</p>
+        
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

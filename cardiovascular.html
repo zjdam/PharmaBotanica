@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular System Remedies - Home Apothecary</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2C3333;
+            background-color: #F5F1E8;
+        }
+
+        header {
+            background-color: #7C9885;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #F5F1E8;
+        }
+
+        .category-hero {
+            background: linear-gradient(135deg, #D4816B 0%, #7C9885 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .category-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .breadcrumb {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #7C9885;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .recipe-header h3 {
+            color: #3D5A40;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-preview {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .recipe-meta {
+            border-top: 1px solid #E8E8E8;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .meta-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            color: #F4A261;
+        }
+
+        .recipe-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #7C9885;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .recipe-btn:hover {
+            background-color: #3D5A40;
+        }
+
+        footer {
+            background-color: #3D5A40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .recipes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌿 Home Apothecary</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="category-hero">
+        <h1>❤️ Cardiovascular System</h1>
+        <p>Natural remedies to support heart health, blood pressure, circulation, and overall cardiovascular wellness</p>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="categories.html">Categories</a> &gt; Cardiovascular System
+        </div>
+
+        <div class="recipes-grid">
+            
+    <div class="recipe-card" onclick="window.location.href='recipe-1.html'">
+        <div class="recipe-header">
+            <h3>Garlic Supplement (Fermented Garlic Honey)</h3>
+        </div>
+        <p class="recipe-preview">Embrace nature's cardiovascular protector with our premium Garlic Supplement. Standardized for optimal potency, garlic has been scientifically shown to support healthy cholesterol levels and blood pressure...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-2.html'">
+        <div class="recipe-header">
+            <h3>Hawthorn Berry Tea/Tincture</h3>
+        </div>
+        <p class="recipe-preview">Strengthen your heart naturally with our Hawthorn Berry Tea or Tincture. Revered for centuries as a cardiac tonic, hawthorn gently enhances heart muscle function and supports healthy blood pressure...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-3.html'">
+        <div class="recipe-header">
+            <h3>Golden Turmeric Paste</h3>
+        </div>
+        <p class="recipe-preview">Reduce inflammation and support cardiovascular wellness with our Golden Turmeric Paste. This traditional preparation delivers curcumin's powerful anti-inflammatory benefits in a bioavailable form...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-4.html'">
+        <div class="recipe-header">
+            <h3>Flax Oil / Ground Flaxseed</h3>
+        </div>
+        <p class="recipe-preview">Nourish your heart with plant-based omega power. Our cold-pressed Flax Oil provides essential omega-3 fatty acids (ALA) that support cardiovascular function and healthy cholesterol balance...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-5.html'">
+        <div class="recipe-header">
+            <h3>Green Tea Infusion</h3>
+        </div>
+        <p class="recipe-preview">Sip your way to better heart health with our premium Green Tea Infusion. Rich in catechins and powerful antioxidants, green tea supports healthy cholesterol levels and protects blood vessels...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-6.html'">
+        <div class="recipe-header">
+            <h3>Butcher's Broom Tea</h3>
+        </div>
+        <p class="recipe-preview">Experience the time-honored benefits with our carefully crafted herbal tea. This traditional remedy has been trusted for generations to promote healthy blood vessel function and support optimal circulation...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-7.html'">
+        <div class="recipe-header">
+            <h3>Garlic and Lemon Tonic</h3>
+        </div>
+        <p class="recipe-preview">Harness the powerful synergy of two kitchen superfoods with our Garlic and Lemon Tonic. This potent natural remedy combines garlic's renowned cholesterol-lowering properties with lemon's abundant antioxidants...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-8.html'">
+        <div class="recipe-header">
+            <h3>Beetroot and Aronia Juice</h3>
+        </div>
+        <p class="recipe-preview">Fuel your circulation with our vibrant Beetroot and Aronia Juice blend. Packed with essential nutrients and natural nitrates, this delicious juice supports healthy blood flow and vascular function...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-9.html'">
+        <div class="recipe-header">
+            <h3>Warming Turmeric and Cayenne Balm</h3>
+        </div>
+        <p class="recipe-preview">Warm and invigorate your body with our Warming Turmeric and Cayenne Balm. This topical treatment combines the anti-inflammatory power of turmeric with cayenne's circulation-boosting heat...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-10.html'">
+        <div class="recipe-header">
+            <h3>Arterial De-Clogger Tea</h3>
+        </div>
+        <p class="recipe-preview">Support your arterial wellness with our traditional Arterial De-Clogger Tea blend. This carefully formulated herbal tea combines time-tested botanicals known for their cardiovascular benefits...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-11.html'">
+        <div class="recipe-header">
+            <h3>Heart Harmony Elixir (Happy Heart Elixir)</h3>
+        </div>
+        <p class="recipe-preview">Nourish your heart with our Heart Harmony Elixir, a gentle yet powerful herbal blend. Featuring heart-strengthening hawthorn berries and vitamin C-rich rose hips for comprehensive cardiovascular support...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-12.html'">
+        <div class="recipe-header">
+            <h3>Bilberry Heart-Drops (Tincture)</h3>
+        </div>
+        <p class="recipe-preview">Discover concentrated heart support with our Bilberry Heart-Drops. This premium alcohol-based tincture captures the cardiovascular benefits of wild bilberries in a convenient, fast-absorbing format...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-13.html'">
+        <div class="recipe-header">
+            <h3>Young Heart Elixir (Vital Heart Blend)</h3>
+        </div>
+        <p class="recipe-preview">Revitalize your cardiovascular system with our Young Heart Elixir. This comprehensive multi-herb tonic masterfully blends hawthorn, turmeric, ginger, and garlic for all-around heart support...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+    
+    <div class="recipe-card" onclick="window.location.href='recipe-14.html'">
+        <div class="recipe-header">
+            <h3>Horse Chestnut Cooling Gel</h3>
+        </div>
+        <p class="recipe-preview">Find soothing relief with our Horse Chestnut Cooling Gel, specially formulated for varicose vein care. This refreshing topical treatment combines horse chestnut extract with calming witch hazel...</p>
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-label">Ease of Prep:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Find Ingredients:</span>
+                <span class="stars">⭐⭐⭐</span>
+            </div>
+        </div>
+        <button class="recipe-btn">View Recipe →</button>
+    </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Home Apothecary. All rights reserved.</p>
+        <p><strong>Disclaimer:</strong> These are traditional remedies and educational resources. They are not medical advice. Always consult with a healthcare professional before starting any new health regimen.</p>
+        
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
